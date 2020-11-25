@@ -1,0 +1,90 @@
+body {
+    background-image: url("https://image.freepik.com/free-vector/ethnic-floral-seamless-pattern_1159-3574.jpg");
+}
+
+#container {
+  display: grid;
+  grid-template: 30% 70% / auto auto;
+  max-width: 600px;
+  place-items: center;
+  background: whitesmoke;
+  border: 3px solid steelblue;
+  place-items: center / center;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  position: absolute;
+  left: 25%;
+  gap: 5px 5px;
+  padding: 30px;
+} 
+
+#display {
+    grid-column: 1 / 3;
+    place-self: center stretch;
+    text-align: center;
+    background: lightgrey;
+    color: gray;
+    vertical-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#left-grid {
+    display: grid;
+    place-items: center;
+    grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+    text-align: center;
+    vertical-align: center;
+    padding: 15px;
+    border: 1px dotted #af40ff;
+    gap: 5px;
+}
+
+#right-grid {
+    display: grid;
+    place-items: center;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+    text-align: center;
+    vertical-align: center;
+    padding: 15px;
+    border: 1px dotted #af40ff;
+    gap: 5px;
+}
+
+#backBtn {
+    grid-row: 1 / 3;
+    grid-column: 2 / 3; 
+    align-self: stretch;
+}
+
+#acBtn {
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+    align-self: stretch; 
+}
+
+.numbers {
+    border: 2px solid steelblue;
+    border-radius: 15px;
+    min-height: 40px;
+    min-width: 70px;
+}
+
+.operators {
+    border: 2px solid steelblue;
+    border-radius: 15px;
+    min-height: 40px;
+    min-width: 70px;
+}
